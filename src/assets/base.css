@@ -36,3 +36,10 @@ body {
     sans-serif;
   font-size: 1em;
 }
+
+.container {
+  width: 1050px;
+  margin: 0 auto;
+}
+
+

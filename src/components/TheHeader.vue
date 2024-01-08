@@ -1,4 +1,5 @@
 <template>
+  <div class="container">
   <header class="header">
     <div class="logo">
     ARTEShop
@@ -7,11 +8,11 @@
       <ul class="menu">
         <li><a href="">PROMOÇÃO</a></li>
 
-        <li><a href="">CONTATO</a></li>
+        <li><a href="">SOBRE</a></li>
 
         <li class="dropdown">
           <img src="./icons/notificationOff.png" 
-            alt="notificação"
+            alt="notificacao"
           >
           <div 
             v-if="notification.quant"
@@ -62,6 +63,7 @@
       </ul>
     </div>
   </header>
+</div>
 </template>
 
 <script>
@@ -127,16 +129,15 @@ export default {
 </script>
 
 <style>
-  .header {
+  header {
     background-color: gold;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #000;
     height: 7vh;
-    padding: 0 15vw 0 15vw;
-    position: fixed;
-    width: 70%;
+    position: absolute;
+    width: 1000px;
   }
   .menu {
     display: flex;
@@ -222,5 +223,6 @@ export default {
 
 .dropdown-content:hover +  {
   background-color: #E3735E;
+  float: right;
 }
 </style>
