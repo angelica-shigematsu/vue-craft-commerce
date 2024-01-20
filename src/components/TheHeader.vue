@@ -47,13 +47,13 @@
               v-if="item.quant">
               <p> {{ item.name }}</p> 
               <div class="card-quant">
-                <p
+                <div
                   @click="removeProduct(item.id)"
-                  class="iconDiscreaseProduct">-</p>
+                  class="iconDiscreaseProduct">-</div>
                   <p>{{ cart.product[item.id-1].quant }}</p>
-                <p
+                <div
                   @click="addProduct(item.id)"
-                  class="iconDiscreaseProduct">+</p>
+                  class="iconDiscreaseProduct">+</div>
                 </div>
               </div>
             <hr>
@@ -179,6 +179,7 @@ export default {
     background-color: #E3735E;
     color: #fff;
     text-align: center;
+    width: 20%;
 
   }
 
@@ -213,7 +214,7 @@ export default {
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
+  padding: 10px 10px;
   z-index: 1;
 }
 
